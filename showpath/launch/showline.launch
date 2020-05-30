@@ -1,0 +1,9 @@
+<launch>
+
+    <!-- node_showpath -->
+    <node pkg="showpath" type="showpath" name="showpath" />
+
+    <!-- 运行rviz -->
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find showpath)/launch/config.rviz"/>
+
+</launch>
